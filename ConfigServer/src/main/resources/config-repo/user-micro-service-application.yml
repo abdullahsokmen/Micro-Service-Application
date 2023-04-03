@@ -6,7 +6,7 @@ spring:
     host: localhost
     port: 5672
     username: user
-    password: root
+    password: *****
   zipkin:
     enabled: true
     base-url: http://localhost:9411
@@ -15,7 +15,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: root
+    password: *****
     url: jdbc:postgresql://localhost:5432/UserDB
   jpa:
     hibernate:
