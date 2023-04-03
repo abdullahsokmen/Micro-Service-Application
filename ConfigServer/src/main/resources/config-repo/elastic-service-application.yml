@@ -5,7 +5,7 @@ spring:
   security:
     user:
       name: abdullah
-      password: 12345
+      password: *****
   zipkin:
     service:
       name: elastic-service
