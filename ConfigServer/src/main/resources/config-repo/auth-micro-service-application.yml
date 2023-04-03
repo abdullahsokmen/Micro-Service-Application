@@ -1,0 +1,39 @@
+server:
+  port: 9090
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user
+    password: root
+  zipkin:
+    enabled: true
+    base-url: http://localhost:9411
+    service:
+      name: auth-server
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/AuthDB
+  jpa:
+    hibernate:
+      ddl-auto: update
+# !!!!!!DİKKKATTTTTT!!!!!!!!
+# key-value kullaniminda : dan sonra mutlaka bosluk birakin
+# key:deger ->yanlıs kullanım cünkü deger : dan sonra bosluk olmadan yazilmis
+# key: deger ->dogru olan bu
+# Onemli!
+# Sifre gibi baskalarinin görmesini istemedigimiz bilgilerin yml dosyasında dahil tutulması
+# cok sakincalidir. Bu nedenle bu bilgilerin gizlenmesi gereklidir. Bu islemi yapabilmek icin
+# EnvironmentVariable -> Sistem Ortam degiskenleri kullanmak gereklidir.
+authservice:
+  bunu-ben-yazdim:
+    secret-key: ${JAVA_SECRETKEY}
+    issuer: ${JAVA6_ISSUER}
+
+ornek:
+  deger1: bunedir
+  deger2: 1234512512
+  deger3: "buraya dikkat"

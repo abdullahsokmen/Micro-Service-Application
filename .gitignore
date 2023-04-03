@@ -1,0 +1,18 @@
+# Project exclude paths
+/.gradle/
+/ApiGatewayService/build/
+/ApiGatewayService/build/classes/java/main/
+/AuthMicroService/build/
+/AuthMicroService/build/classes/java/main/
+/ConfigServer/build/
+/ConfigServer/build/classes/java/main/
+/ConfigServerGit/build/
+/ConfigServerGit/build/classes/java/main/
+/ElasticMicroService/build/
+/ElasticMicroService/build/classes/java/main/
+/ProductMicroService/build/
+/ProductMicroService/build/classes/java/main/
+/SalesMicroService/build/
+/SalesMicroService/build/classes/java/main/
+/UserProfileMicroService/build/
+/UserProfileMicroService/build/classes/java/main/
