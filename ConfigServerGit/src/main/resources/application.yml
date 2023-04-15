@@ -1,5 +1,5 @@
 server:
-  port: 88888
+  port: 888888
 
 spring:
   zipkin:
