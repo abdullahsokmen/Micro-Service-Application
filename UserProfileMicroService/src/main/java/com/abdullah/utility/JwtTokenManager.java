@@ -15,7 +15,7 @@ public class JwtTokenManager {
 
     //Bu secret keyler kodun icerisinde durmaz böyle ama ders icin yapildi
     @Value("${authservice.bunu-ben-yazdim.secret-key}")
-    String secretKey;ş
+    String secretKey;
     @Value("${authservice.bunu-ben-yazdim.issuer}")
     String issuer;
 
