@@ -40,7 +40,7 @@ public class JwtTokenManager {
                     .sign(Algorithm.HMAC512(secretKey));
             return Optional.of(token);
         }catch (Exception exception){
-            return Optional.empty();a
+            return Optional.empty();
         }
     }
 
