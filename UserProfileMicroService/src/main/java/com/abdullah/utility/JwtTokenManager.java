@@ -28,7 +28,7 @@ public class JwtTokenManager {
              * Claim objelerinin icine önemli ve herkes ile paylasmayacaginiz bilgileri koymazsiniz
              * email,username,password vs. gibi önemli bilgiler payload icinde olamaz.
              */
-            token= JWT.create().withAudience()
+            token= JWT.create().withAudience()a
                     .withClaim("id",id)
                     .withClaim("howtopage","AuthMicroService")
                     .withClaim("lastjoin",System.currentTimeMillis())
